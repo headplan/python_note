@@ -2,5 +2,5 @@
 
 * [关于](README.md)
 * [简介与基础](Chapter_01.md)
-* 函数
+* [函数](Chapter_02.md)
 
