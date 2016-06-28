@@ -11,7 +11,7 @@
 > 在命令行模式下执行```python test.py```在
 > 文件中输入print(100+200+300),可以打印出600了
 
-Python的编辑器推荐,Sublime Text和PyCharm.
+Python的编辑器推荐,Sublime Text和PyCharm.其中PyCharm在Windows和MacOS中安装非常简单,在Linux系统中安装稍有不同,在bin目录中找到pycharm.sh,运行这个脚本即可.
 
 ### 直接运行py文件
 在Mac和Linux上可以像exe文件一样直接运行.py文件.但是需要在第一行加上一个特殊的注释```#!/usr/bin/env python3```.然后通过命令给.py文件执行权限```chmod a+x hello.py```之后就可以执行运行文件了```./test.py```可以一边编辑代码,一边打开交互命令窗口,把代码粘贴到命令行验证.
