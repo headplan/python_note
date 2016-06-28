@@ -14,25 +14,15 @@
 Python的编辑器推荐,Sublime Text和PyCharm.
 
 ### 直接运行py文件
-在Mac和Linux上可以像exe文件一样直接运行.py文件. 
-	需要在第一行加上一个特殊的注释 : #!/usr/bin/env python3
-	然后通过命令给 .py 文件执行权限 : chmod a+x hello.py
-	之后就可以执行运行文件了 ./test.py
-可以一边编辑代码 , 一边打开交互命令窗口 , 把代码粘贴到命令行验证 . 
-代码运行助手
-	启动 , python3 ./learning.py
-	运行 , local.liaoxuefeng.com:39093
-输入和输出
-	输出 : 
-	print() : 输出字符串 , 用逗号分割 , 输出多个字符串 , 逗号转为空格
-	也可以打印整数 , 或者计算结果 , 例如 , print(300) , print(1+2)
-	输入 : 
-	input() : 可以让用户输入字符串 , 并存放到一个变量里 . 
-	输入 name=input() , 然后输入任意字符 , 此时刚才输入的字符就存	放到了变量 name 里 , 直接输入变量名 name ,就可以显示内容 , 	当然 , print() 打印也可以 . 有了打印 , 就可以打印变量和内容了 . 
-	例如 : 
-		print(‘hello’, name)
-	input() 函数还可以显示字符串提示用户 , 继续修改 : 
+在Mac和Linux上可以像exe文件一样直接运行.py文件.但是需要在第一行加上一个特殊的注释```#!/usr/bin/env python3```.然后通过命令给.py文件执行权限```chmod a+x hello.py```之后就可以执行运行文件了```./test.py```可以一边编辑代码,一边打开交互命令窗口,把代码粘贴到命令行验证.
+
+### 输入和输出
+* 输出
+  * print():输出字符串,用逗号分割,输出多个字符串,逗号转为空格.也可以打印整数,或者计算结果.例如,```print(300)```或```print(1+2)```
+* 输入
+  * input():可以让用户输入字符串,并存放到一个变量里.输入name=input(),然后输入任意字符,此时刚才输入的字符就存放到了变量name里,直接输入变量名name,就可以显示内容,当然,print()打印也可以.有了打印,就可以打印变量和内容了.例如:
+		print(‘hello’,name)
+	input()函数还可以显示字符串提示用户,继续修改:
 		name = input(‘please enter your name:’)
-		print(‘hello,’ name)
-	这样就可以 hello 不同的人了 . 
-	这就是我们常说的 Input/Output , 简称 IO .
+		print(‘hello,’,name)
+	这样就可以hello不同的人了.这就是我们常说的Input/Output,简称IO.
