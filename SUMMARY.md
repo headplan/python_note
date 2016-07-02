@@ -7,6 +7,6 @@
    * [使用list和tuple](Article_01_03.md)
    * [条件判断](Article_01_04.md)
    * [循环](Article_01_05.md)
-   * 使用dict和set
+   * [使用dict和set](Article_01_06.md)
 * [函数](Chapter_02.md)
 
