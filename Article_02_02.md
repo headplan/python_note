@@ -4,3 +4,15 @@
 
 函数体内部的语句在执行时,一旦执行到`return`时,函数就执行完毕,并将结果返回.没有`return`语句,函数执行完毕后也会返回结果,只是结果为`None`.
 
+```py
+def my_abx(x):
+    if x >= 0:
+        return x
+    else:
+        return -x
+```
+
+
+
+
+
