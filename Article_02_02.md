@@ -30,3 +30,48 @@ def my_abx(x):
 
 用`from abstest import my_abs`导入函数
 
+### 空函数
+
+使用`pass`语句定义一个什么也不做的空函数.
+
+```
+def nop():
+    pass
+```
+
+pass语句类似一个占位符,可以让代码不报错继续运行,例如
+
+```
+if age >= 18:
+    pass
+```
+
+缺少`pass`代码运行就会有语法错误
+
+### 参数检查
+
+调用函数时,如果参数个数不对,Python解释器会自动检查出来,并抛出`TypeError`
+
+```
+>>> my_abs(1, 2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: my_abs() takes 1 positional argument but 2 were given
+```
+
+参数类型不对时,`TypeError`只能抛出内置函数的错误.数据类型检查可以用内置函数`isinstance()`实现
+
+```
+def my_abs(x):
+    if not isinstance(x, (int, float)):
+        raise TpyeError('类型错误')
+    if x >= 0:
+        return x
+    else:
+        return -x
+```
+
+
+
+
+
