@@ -12,7 +12,19 @@ def my_abx(x):
         return -x
 ```
 
+在命令行定义函数会出现`...`换行,按两次回车回到`>>>`状态
 
+```py
+>>> def my_abs(x):
+... 	if x >= 0:
+... 		return x
+... 	else:
+... 		return -x
+...
+>>> my_abs(-21)
+21
+>>>
+```
 
 
 
