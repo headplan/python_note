@@ -16,15 +16,17 @@ def my_abx(x):
 
 ```py
 >>> def my_abs(x):
-... 	if x >= 0:
-... 		return x
-... 	else:
-... 		return -x
+...     if x >= 0:
+...         return x
+...     else:
+...         return -x
 ...
 >>> my_abs(-21)
 21
 >>>
 ```
 
+如果已经把`my_abs()`的函数定义保存为`abstest.py`文件,可以在该文件当前目录下启动Python解释器.
 
+用`from abstest import my_abs`导入函数
 
