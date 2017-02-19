@@ -71,7 +71,30 @@ def my_abs(x):
         return -x
 ```
 
+### 返回多个值
 
+```
+import math
+
+def move(x, y, step, angle=0):
+    nx = x + step * math.cos(angle)
+    ny = y - step * math.sin(angle)
+    return nx, ny
+```
+
+> `import math`语句表示导入`math`包
+
+获得返回值
+
+```
+>>> x, y = move(100, 100, 60, math.pi / 6)
+>>> print(x, y)
+151.96152422706632 70.0
+# 其实这只是一种假象，Python返回多值其实就是返回一个tuple
+>>> r = move(100, 100, 60, math.pi / 6)
+>>> print(r)
+(151.96152422706632, 70.0)
+```
 
 
 
