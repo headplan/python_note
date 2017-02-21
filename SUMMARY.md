@@ -14,4 +14,5 @@
   * [函数的参数](Article_02_03.md)
   * [递归函数](Article_02_04.md)
 * [高级特性](Chapter_03.md)
+* [函数式编程](Chapter_04.md)
 
