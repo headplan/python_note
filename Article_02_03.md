@@ -90,5 +90,49 @@ def add_end(L=None):
 
 ### 可变参数
 
+可变参数就是传入的参数个数是可变的，可以是1个、2个到任意个，还可以是0个。
+
+```
+def calc(numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+```
+
+通常上面的函数参数也是可变的,只不过参数是一个list或tuple
+
+```
+>>> calc([1, 2, 3])
+14
+>>> calc((1, 3, 5, 7))
+84
+```
+
+定义可变参数和定义一个list或tuple参数相比，仅仅在参数前面加了一个`*`号
+
+```
+def calc(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+    
+# 调用时直接写
+>>> calc(1, 2)
+5
+# 也可以没有参数,即0个参数
+>>> calc()
+0
+
+# 如果想分别传入list或tuple的各个元素,可以像下面这样写
+>>> nums = [1, 2, 3]
+>>> calc(nums[0], nums[1], nums[2])
+14
+# 当然这种写法是最常用且有效的
+>>> calc(*nums)
+14
+```
+
 
 
