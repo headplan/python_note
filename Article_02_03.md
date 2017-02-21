@@ -117,7 +117,7 @@ def calc(*numbers):
     for n in numbers:
         sum = sum + n * n
     return sum
-    
+
 # 调用时直接写
 >>> calc(1, 2)
 5
@@ -133,6 +133,8 @@ def calc(*numbers):
 >>> calc(*nums)
 14
 ```
+
+### 关键字参数
 
 
 
