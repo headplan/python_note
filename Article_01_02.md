@@ -33,7 +33,7 @@
 
 #### Python的字符串
 
-Python 3字符串是以Unicode编码 . 
+Python 3字符串是以Unicode编码 .
 
 * `ord()`函数获取字符的整数表示
 
@@ -44,6 +44,16 @@ Python 3字符串是以Unicode编码 .
 * python字符串在内存中,以Unicode表示,一个字符代表若干字节
 
 * 在网络上传输或者保存到磁盘上 , 需要把`str`变为以字节为单位的`bytes`
+
+Python对`bytes`类型的数据用带`b`前缀的单引号或双引号表示 : 
+
+```
+x = b'ABC'
+```
+
+`'ABC'`和`b'ABC'`的区别是 , 前者是str , 后者`bytes`的每个字符都只占用一个字节
+
+> 以Unicode表示的`str`通过`encode()`方法可以编码为`bytes`
 
 
 
