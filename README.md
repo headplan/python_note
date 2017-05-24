@@ -6,7 +6,7 @@ Python提供了非常完善的基础代码库 , 覆盖了网络、文件、GUI�
 
 缺点:运行速度较慢,代码不能加密.
 
-官网 : https://docs.python.org/3/index.html
+官网 : [https://docs.python.org/3/index.html](https://docs.python.org/3/index.html)
 
 ## 安装
 
@@ -26,4 +26,11 @@ Python是跨平台的,有2.x和3.x两个版本,不兼容.
 * IronPython,和上面的类似,运行在.Net平台上,编译成.Net的字节码.
 
 `注:要和Java或.Net平台交互,最好的还是通过网络调用来交互,确保个程序之间的独立性.`
+
+### 相关资料
+
+* http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000
+* http://www.runoob.com/python3/python3-tutorial.html
+
+
 
