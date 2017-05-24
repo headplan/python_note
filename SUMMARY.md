@@ -14,6 +14,11 @@
   * [函数的参数](Article_02_03.md)
   * [递归函数](Article_02_04.md)
 * [高级特性](Chapter_03.md)
+  * [切片](Chapter_03/qie-pian.md)
+  * [迭代](Chapter_03/die-dai.md)
+  * [列表生成式](Chapter_03/lie-biao-sheng-cheng-qi.md)
+  * [生成器](Chapter_03/sheng-cheng-qi.md)
+  * [迭代器](Chapter_03/die-dai-qi.md)
 * [函数式编程](Chapter_04.md)
 * 模块
 * 面向对象编程
