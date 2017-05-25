@@ -64,7 +64,7 @@ TypeError: my_abs() takes 1 positional argument but 2 were given
 ```
 def my_abs(x):
     if not isinstance(x, (int, float)):
-        raise TpyeError('类型错误')
+        raise TypeError('类型错误')
     if x >= 0:
         return x
     else:
