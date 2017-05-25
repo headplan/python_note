@@ -20,7 +20,7 @@
   * [生成器](Chapter_03/sheng-cheng-qi.md)
   * [迭代器](Chapter_03/die-dai-qi.md)
 * [函数式编程](Chapter_04.md)
-* 模块
+* [模块](mo-kuai.md)
 * 面向对象编程
 * [面向对象高级编程](mian-xiang-dui-xiang-gao-ji-bian-cheng.md)
 * 错误,调试和测试
