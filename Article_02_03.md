@@ -134,7 +134,33 @@ def calc(*numbers):
 14
 ```
 
+可变参数在函数调用时自动组装为一个tuple . 
+
 ### 关键字参数
+
+关键字参数允许传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict . 
+
+```
+def person(name, age, **kw):
+    print('name:', name, 'age:', age, 'other:', kw)
+```
+
+```
+>>> person('Michael', 30)
+name: Michael age: 30 other: {}
+>>> person('Bob', 35, city='Beijing')
+name: Bob age: 35 other: {'city': 'Beijing'}
+>>> person('Adam', 45, gender='M', job='Engineer')
+name: Adam age: 45 other: {'gender': 'M', 'job': 'Engineer'}
+```
+
+```
+>>> extra = {'city': 'Beijing', 'job': 'Engineer'}
+>>> person('Jack', 24, **extra)
+name: Jack age: 24 other: {'city': 'Beijing', 'job': 'Engineer'}
+```
+
+> \*\*extra表示把extra这个dict的所有key-value用关键字参数传入到函数的\*\*kw参数，kw将获得一个dict，注意kw获得的dict是extra的一份拷贝，对kw的改动不会影响到函数外的extra
 
 
 
