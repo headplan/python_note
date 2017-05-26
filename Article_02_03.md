@@ -134,11 +134,11 @@ def calc(*numbers):
 14
 ```
 
-可变参数在函数调用时自动组装为一个tuple . 
+可变参数在函数调用时自动组装为一个tuple .
 
 ### 关键字参数
 
-关键字参数允许传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict . 
+关键字参数允许传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个dict .
 
 ```
 def person(name, age, **kw):
@@ -161,6 +161,42 @@ name: Jack age: 24 other: {'city': 'Beijing', 'job': 'Engineer'}
 ```
 
 > \*\*extra表示把extra这个dict的所有key-value用关键字参数传入到函数的\*\*kw参数，kw将获得一个dict，注意kw获得的dict是extra的一份拷贝，对kw的改动不会影响到函数外的extra
+
+### 命名关键字参数 {#-}
+
+对于关键字参数，函数的调用者可以传入任意不受限制的关键字参数 . 只能通过内部检查 . 
+
+如果要限制关键字参数的名字，可以用命名关键字参数
+
+```
+def person(name, age, *, city, job):
+    print(name, age, city, job)
+```
+
+> 和关键字参数\*\*kw不同，命名关键字参数需要一个特殊分隔符\*，\*后面的参数被视为命名关键字参数
+>
+> 如果函数定义中已经有了一个可变参数，后面跟着的命名关键字参数就不再需要一个特殊分隔符`*`了
+>
+> 命名关键字参数必须传入参数名
+
+```
+>>> person('Jack', 24, city='Beijing', job='Engineer')
+Jack 24 Beijing Engineer
+```
+
+命名关键字参数可以有缺省值
+
+```
+def person(name, age, *, city='Beijing', job):
+    print(name, age, city, job)
+```
+
+```
+# 命名关键字参数city具有默认值，调用时，可不传入city参数
+person('Jack', 24, job='Engineer')
+```
+
+### 参数组合 {#-}
 
 
 
