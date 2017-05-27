@@ -18,5 +18,18 @@ pip3 install --upgrade pip
 
 **目录结构**
 
+```
+backup/ - 备份目录
+conf/ - 配置文件
+dist/ - 打包目录
+www/ - Web目录
+ - static/ - 静态文件
+ - templates/ - 模板文件
+ 
+# mkdir backup/ conf/ dist/ www/ www/static www/templates
+```
+
+
+
 
 
