@@ -31,7 +31,30 @@ for ch in 'ABC':
     print(ch)
 ```
 
+> 所以 , 当使用`for`循环时 , 只要作用于一个可迭代对象 , `for`循环就可以正常运行 , 而我们不太关心该对象究竟是list还是其他数据类型 .
 
+**如何判断一个对象是可迭代对象 ? **
 
+```
+from collections import Iterable
+isinstance('abc', Iterable) # True
+isinstance([1,2,3], Iterable) # True
+isinstance(123, Iterable) # False
+```
 
+像Java一样的下标循环 , 可以使用Python内置的`enumerate`函数 , 把一个list变成索引-元素对 , 即可
+
+```
+for i, value in enumerate(['A', 'B', 'C']):
+    print(i, value)
+```
+
+在for循环里 , 同时引用了两个变量 : 
+
+```
+for x, y in [(1, 1), (2, 4), (3, 9)]:
+    print(x, y)
+```
+
+**任何可迭代对象都可以作用于`for`循环 , 包括我们自定义的数据类型 , 只要符合迭代条件 , 就可以使用`for`循环**
 
