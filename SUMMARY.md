@@ -26,6 +26,7 @@
     * [filter](Chapter_04/gao-jie-han-shu/mapreduce/filter.md)
     * [sorted](Chapter_04/gao-jie-han-shu/sorted.md)
   * [返回函数](Chapter_04/fan-hui-han-shu.md)
+  * [匿名函数](Chapter_04/ni-ming-han-shu.md)
 * [模块](mo-kuai.md)
 * 面向对象编程
 * [面向对象高级编程](mian-xiang-dui-xiang-gao-ji-bian-cheng.md)
