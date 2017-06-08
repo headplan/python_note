@@ -23,6 +23,8 @@
   * [高阶函数](Chapter_04/gao-jie-han-shu.md)
     * [map/reduce](Chapter_04/gao-jie-han-shu/mapreduce.md)
       * [MapReduce论文](Chapter_04/gao-jie-han-shu/mapreduce/mapreducelun-wen.md)
+    * [filter](Chapter_04/gao-jie-han-shu/mapreduce/filter.md)
+    * [sorted](Chapter_04/gao-jie-han-shu/sorted.md)
 * [模块](mo-kuai.md)
 * 面向对象编程
 * [面向对象高级编程](mian-xiang-dui-xiang-gao-ji-bian-cheng.md)
