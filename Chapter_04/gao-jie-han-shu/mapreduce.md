@@ -103,5 +103,28 @@ def str2int(s):
 
 #### 练习
 
+利用`map()`函数 , 把用户输入的不规范的英文名字 , 变为首字母大写 , 其他小写的规范名字 . 输入 : `['adam', 'LISA', 'barT']`, 输出 : `['Adam', 'Lisa', 'Bart']`
+
+```
+## 练习1
+def normalize(name):
+    return name[0:1].upper() + name[1:].lower()
+
+name = ['adam', 'LISA', 'barT']
+print(list(map(normalize, name)))
+```
+
+Python提供的`sum()`函数可以接受一个list并求和 , 请编写一个`prod()`函数 , 可以接受一个list并利用`reduce()`求积 . 
+
+```
+## 练习2
+def prod(L):
+    def axb(x, y):
+        return x * y
+    return reduce(axb, L)
+
+print(prod([3, 5, 7, 9]))
+```
+
 
 
