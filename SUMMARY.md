@@ -38,7 +38,7 @@
 * 正则表达式
 * 常用内建模块
 * 常用第三方模块
-* virtualenv
+* [virtualenv](virtualenv.md)
 * 图形界面
 * 网络编程
 * 电子邮件
