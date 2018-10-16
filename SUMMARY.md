@@ -33,7 +33,7 @@
 * 面向对象编程
 * [面向对象高级编程](mian-xiang-dui-xiang-gao-ji-bian-cheng.md)
 * 错误,调试和测试
-* IO编程
+* [IO编程](iobian-cheng.md)
 * 进程和线程
 * 正则表达式
 * 常用内建模块
