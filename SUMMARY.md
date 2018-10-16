@@ -50,4 +50,5 @@
   * [Python机器学习及分析工具](ji-qi-xue-xi/pythonji-qi-xue-xi-ji-fen-xi-gong-ju.md)
   * [数据预处理](ji-qi-xue-xi/shu-ju-yu-chu-li.md)
   * [机器学习分析算法](ji-qi-xue-xi/ji-qi-xue-xi-fen-xi-suan-fa.md)
+    * [分类问题](ji-qi-xue-xi/ji-qi-xue-xi-fen-xi-suan-fa/fen-lei-wen-ti.md)
 
