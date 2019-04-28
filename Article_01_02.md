@@ -103,3 +103,7 @@ len(b'\xe4\xb8\xad\xe6\x96\x87')
 
 ![](/assets/zhuangyizifuzhengli.png)
 
+#### 简单总结
+
+![](/assets/jiandanzongjie.png)
+
