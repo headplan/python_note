@@ -111,3 +111,17 @@ len(b'\xe4\xb8\xad\xe6\x96\x87')
 
 数据拼接的方法很简单了 , 就是利用数据拼接符号【+】, 将需要拼接的变量连在一起就行了 . 
 
+对于不同数据类型的拼接 , 会报错 , 例如字符串和整型
+
+```
+TypeError：can only concatenate str (not "int") to str
+```
+
+可以使用type\(\)函数检查数据类型 . 
+
+```py
+print(type('hello'))
+```
+
+
+
