@@ -73,5 +73,11 @@ else:
 > IndentationError: expected an indented block
 > ```
 
+> 语法错误
+>
+> ```
+> SyntaxError: invalid syntax
+> ```
+
 
 
