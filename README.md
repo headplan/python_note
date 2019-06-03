@@ -28,7 +28,7 @@ Python是跨平台的,有2.x和3.x两个版本,不兼容.
 
 > 报错 : ModuleNotFoundError: No module named '\_ctypes'
 >
-> Python3.7版本需要一个新的包libffi-devel , 安装此包之后再次进行编译安装即可 . 
+> Python3.7版本需要一个新的包libffi-devel , 安装此包之后再次进行编译安装即可 .
 >
 > yum install libffi-devel -y
 
