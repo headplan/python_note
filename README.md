@@ -17,6 +17,21 @@ Python是跨平台的,有2.x和3.x两个版本,不兼容.
 * 命令行运行`python`进入2.x版本
 * 命令行运行`python3`进入3.x版本
 
+源码安装
+
+```
+# tar -zxvf Python-3.6.1.tgz
+# cd Python-3.6.1
+# ./configure
+# make && make install
+```
+
+> 报错 : ModuleNotFoundError: No module named '\_ctypes'
+>
+> Python3.7版本需要一个新的包libffi-devel , 安装此包之后再次进行编译安装即可 . 
+>
+> yum install libffi-devel -y
+
 ### 解释器
 
 * CPython,官方版本的解释器,用C语言开发的,在命令行下运行python\(python3\)就启动解释器.
