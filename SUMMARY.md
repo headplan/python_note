@@ -1,7 +1,8 @@
 # Summary
 
-* [简介](README.md)
-* [知识图谱](zhi-shi-tu-pu.md)
+* [关于](README.md)
+  * [知识图谱](zhi-shi-tu-pu.md)
+  * [Jupyter Notebooks](jupyter-notebooks.md)
 * [基础](Chapter_01.md)
   * [数据类型和变量](Article_01_01.md)
   * [字符串和编码](Article_01_02.md)
