@@ -1,5 +1,35 @@
 # 使用list和tuple
 
+## 列表和元组
+
+列表和元组 , 都是一个**可以放置任意数据类型的有序集合** . 
+
+大多数编程语言中 , 集合的数据类型必须一致 , 比如Go语言的集合 . 不过对于Python的列表和元组来说随便 , PHP的数组也随便 . 
+
+```
+>>> list = [1,2,'hello']
+>>> list
+[1, 2, 'hello']
+>>> tup = (1,2,'hello')
+>>> tup
+(1, 2, 'hello')
+```
+
+#### 列表和元组的区别
+
+* **列表是动态的** , 长度大小不固定 , 可以随意增加,删减或者改变元素\(mutable\)
+* **元组是静态的** , 长度大小固定 , 无法增加,删除或者改变\(immutable\)
+
+```
+>>> list[1] = 666
+>>> list
+[1, 666, 'hello']
+>>> tup[1] = 666
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+```
+
 ## list
 
 Python内置的一种数据类型,list是一种有序的集合,可以随时添加和删除其中的元素.
