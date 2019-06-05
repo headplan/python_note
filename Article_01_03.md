@@ -30,7 +30,7 @@ Traceback (most recent call last):
 TypeError: 'tuple' object does not support item assignment
 ```
 
-如果想对已有的元组做改变 , 只能重新开辟一块内存 , 创建新的元组 , 例 : 
+如果想对已有的元组做改变 , 只能重新开辟一块内存 , 创建新的元组 , 例 :
 
 ```py
 >>> tup = (1,2,3,4)
@@ -47,7 +47,7 @@ TypeError: 'tuple' object does not support item assignment
 [1, 2, 3, 4, 5]
 ```
 
-**Python中的列表和元组都支持负数索引** . -1表示最后一个元素 , -2表示倒数第二个元素 . 
+**Python中的列表和元组都支持负数索引** . -1表示最后一个元素 , -2表示倒数第二个元素 .
 
 ```py
 >>> l
@@ -72,6 +72,30 @@ TypeError: 'tuple' object does not support item assignment
 >>> tup[1:3]
 (2, 3)
 ```
+
+**列表和元组可以随意嵌套**
+
+```py
+>>> l = [[1,2,3],[4,5]]
+>>> l
+[[1, 2, 3], [4, 5]]
+>>> tup = ((1,2,3),(4,5))
+>>> tup
+((1, 2, 3), (4, 5))
+```
+
+**可以通过list\(\)和tuple\(\)函数相互转化**
+
+```py
+>>> list((1,2,3))
+[1, 2, 3]
+>>> tuple([1,2,3])
+(1, 2, 3)
+```
+
+**list和tuple常用的内置函数**
+
+
 
 ## list
 
