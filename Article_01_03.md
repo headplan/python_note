@@ -100,6 +100,30 @@ TypeError: 'tuple' object does not support item assignment
 * **list.reverse\(\)和list.sort\(\)** - 分别表示原地倒转列表和排序\(注意,元组没有内置的这两个函数\)
 * **reversed\(\)和sorted\(\)** - 同样表示对列表/元组进行倒转和排序 , 但是会返回一个倒转后或者排好序的新的列表/元组
 
+```py
+l = [3, 2, 3, 7, 8, 1]
+l.count(3) 
+2
+l.index(7)
+3
+l.reverse()
+l
+[1, 8, 7, 3, 2, 3]
+l.sort()
+l
+[1, 2, 3, 3, 7, 8]
+
+tup = (3, 2, 3, 7, 8, 1)
+tup.count(3)
+2
+tup.index(7)
+3
+list(reversed(tup))
+[1, 8, 7, 3, 2, 3]
+sorted(tup)
+[1, 2, 3, 3, 7, 8]
+```
+
 ## list
 
 Python内置的一种数据类型,list是一种有序的集合,可以随时添加和删除其中的元素.
