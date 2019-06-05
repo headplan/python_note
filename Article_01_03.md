@@ -95,7 +95,10 @@ TypeError: 'tuple' object does not support item assignment
 
 **list和tuple常用的内置函数**
 
-
+* **count\(item\)** - 表示统计列表/元组中item出现的次数
+* **index\(item\)** - 表示返回列表/元组中item第一次出现的索引
+* **list.reverse\(\)和list.sort\(\)** - 分别表示原地倒转列表和排序\(注意,元组没有内置的这两个函数\)
+* **reversed\(\)和sorted\(\)** - 同样表示对列表/元组进行倒转和排序 , 但是会返回一个倒转后或者排好序的新的列表/元组
 
 ## list
 
