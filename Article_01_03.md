@@ -194,7 +194,26 @@ python3 -m timeit -s 'x=(1,2,3,4,5,6)' 'y=x[3]'
 10000000 loops, best of 5: 21.9 nsec per loop
 ```
 
-当然 , 如果想增加 , 删除或者改变元素 , 使用列表显然更优 . 
+当然 , 如果想增加 , 删除或者改变元素 , 使用列表显然更优 .
+
+#### 列表和元组的使用场景
+
+如果存储的数据和变量不变 , 比如你有一个函数 , 需要返回的是一个地点的经纬度 , 然后直接传给前端渲染 , 那么肯定选用元组更合适 . 
+
+```py
+def get_location():
+    ..... 
+    return (longitude, latitude)
+```
+
+如果存储的数据或数量是可变的 , 比如社交平台上的一个日志功能 , 是统计一个用户在一周之内看了哪些用户的帖子的 , 那么用列表更合适 . 
+
+```py
+viewer_owner_id_list = [] # 里面的每个元素记录了这个 viewer 一周内看过的所有 owner 的 id
+records = queryDB(viewer_id) # 索引数据库，拿到某个 viewer 一周内的日志
+for record in records:
+    viewer_owner_id_list.append(record.id)
+```
 
 ## list
 
