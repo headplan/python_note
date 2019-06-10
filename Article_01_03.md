@@ -219,11 +219,11 @@ for record in records:
 
 **元素不需要改变时 : **
 
-两三个元素 , 使用tuple , 元素多一点使用namedtuple . 
+两三个元素 , 使用tuple , 元素多一点使用namedtuple .
 
 **元素需要改变时 : **
 
-需要高效随机读取 , 使用list . 需要关键字高效查找 , 采用dict . 去重 , 使用set . 大型数据节省空间 , 使用标准库array . 大型数据库高效操作 , 使用numpy.array . 
+需要高效随机读取 , 使用list . 需要关键字高效查找 , 采用dict . 去重 , 使用set . 大型数据节省空间 , 使用标准库array . 大型数据库高效操作 , 使用numpy.array .
 
 ---
 
