@@ -185,7 +185,7 @@ python3 -m timeit 'x=[1,2,3,4,5,6]'
 5000000 loops, best of 5: 80.9 nsec per loop
 ```
 
-索引操作 , 则速度差别非常小 . 
+索引操作 , 则速度差别非常小 .
 
 ```py
 python3 -m timeit -s 'x=[1,2,3,4,5,6]' 'y=x[3]'
@@ -193,6 +193,8 @@ python3 -m timeit -s 'x=[1,2,3,4,5,6]' 'y=x[3]'
 python3 -m timeit -s 'x=(1,2,3,4,5,6)' 'y=x[3]'
 10000000 loops, best of 5: 21.9 nsec per loop
 ```
+
+当然 , 如果想增加 , 删除或者改变元素 , 使用列表显然更优 . 
 
 ## list
 
