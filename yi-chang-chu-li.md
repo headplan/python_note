@@ -63,7 +63,7 @@ print('continue')
 
 > except block只接受和它相匹配的异常类型并执行 , 否则程序直接终止退出 .
 
-很难确保程序覆盖所有的异常类型 , 通常会列出需要用到的异常类型 , 最后一个except block异常类型为Exception . Exception是其他所有非系统异常的基类 , 能够匹配任意非系统异常 . 
+很难确保程序覆盖所有的异常类型 , 通常会列出需要用到的异常类型 , 最后一个except block异常类型为Exception . Exception是其他所有非系统异常的基类 , 能够匹配任意非系统异常 .
 
 ```py
 try:
@@ -101,7 +101,7 @@ except (ValueError, IndexError) as err:
 
 **finally**
 
-异常处理中 , finally block中的语句都会被执行 , 哪怕try和except block中使用了return语句 . 例如 , 比较常见的应用场景 , 文件的读取 : 
+异常处理中 , finally block中的语句都会被执行 , 哪怕try和except block中使用了return语句 . 例如 , 比较常见的应用场景 , 文件的读取 :
 
 ```py
 import sys
