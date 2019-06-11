@@ -138,17 +138,29 @@ except MyInputError as err:
 
 #### 异常的使用场景与注意点
 
-通常来说 , 在程序中 , 如果不确定某段代码能否成功执行 , 往往这个地方就需要使用异常处理 . 
+通常来说 , 在程序中 , 如果不确定某段代码能否成功执行 , 往往这个地方就需要使用异常处理 .
 
-例如 , 大型社交网站的后台 , 需要针对用户发送的请求返回相应记录 . 用户记录往往存储在key-value结构的数据库中 , 每次有请求过来 , 拿到用户的ID , 并用ID查询数据库中此人的记录 , 就能返回相应的结果 . 返回的结果是原始数据 , 一般都是json string , 还要对json string进行decode解码 . 
+例如 , 大型社交网站的后台 , 需要针对用户发送的请求返回相应记录 . 用户记录往往存储在key-value结构的数据库中 , 每次有请求过来 , 拿到用户的ID , 并用ID查询数据库中此人的记录 , 就能返回相应的结果 . 返回的结果是原始数据 , 一般都是json string , 还要对json string进行decode解码 .
 
-这里可能存在的异常是 , 字符串如果不符合规范 , 便无法解码 , 就会抛出异常 . 异常可以这样写 : 
+这里可能存在的异常是 , 字符串如果不符合规范 , 便无法解码 , 就会抛出异常 . 异常可以这样写 :
 
 ```py
 try:
     data = json.loads(raw_data)
 except JSONDecodeError as err:
     print('JSONDecodeError: {}'.format(err))
+```
+
+异常很好用 , 但切记滥用异常处理 . 
+
+例如 , 想要查找字典中某个键对应的值时 , 就不能写成异常的形式
+
+```py
+d = {'name': 'jason', 'age': 20}
+try:
+    value = d['dob']
+except KeyError as err:
+    print('KeyError: {}'.format(err))
 ```
 
 
