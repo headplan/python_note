@@ -127,12 +127,12 @@ class MyInputError(Exception):
         self.value = value
     def __str__(self): # 自定义异常类型的 string 表达形式
         return ("{} is invalid input".format(repr(self.value)))
-    
+
 try:
     raise MyInputError(1) # 抛出 MyInputError 这个异常
 except MyInputError as err:
     print('error: {}'.format(err))
 ```
 
-
+实际工作中 , 内置的异常无法满足 , 就可以自定义一些异常类 . 不过 , 大多数情况下 , Python内置的异常类型已经足够了 . 
 
