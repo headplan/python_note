@@ -10,6 +10,7 @@
   * [使用dict和set](Article_01_06.md)
   * [条件判断](Article_01_04.md)
   * [循环](Article_01_05.md)
+  * [异常处理](yi-chang-chu-li.md)
 * [函数](Chapter_02.md)
   * [调用函数](Article_02_01.md)
   * [定义函数](Article_02_02.md)
