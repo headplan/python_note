@@ -134,5 +134,22 @@ except MyInputError as err:
     print('error: {}'.format(err))
 ```
 
-实际工作中 , 内置的异常无法满足 , 就可以自定义一些异常类 . 不过 , 大多数情况下 , Python内置的异常类型已经足够了 . 
+实际工作中 , 内置的异常无法满足 , 就可以自定义一些异常类 . 不过 , 大多数情况下 , Python内置的异常类型已经足够了 .
+
+#### 异常的使用场景与注意点
+
+通常来说 , 在程序中 , 如果不确定某段代码能否成功执行 , 往往这个地方就需要使用异常处理 . 
+
+例如 , 大型社交网站的后台 , 需要针对用户发送的请求返回相应记录 . 用户记录往往存储在key-value结构的数据库中 , 每次有请求过来 , 拿到用户的ID , 并用ID查询数据库中此人的记录 , 就能返回相应的结果 . 返回的结果是原始数据 , 一般都是json string , 还要对json string进行decode解码 . 
+
+这里可能存在的异常是 , 字符串如果不符合规范 , 便无法解码 , 就会抛出异常 . 异常可以这样写 : 
+
+```py
+try:
+    data = json.loads(raw_data)
+except JSONDecodeError as err:
+    print('JSONDecodeError: {}'.format(err))
+```
+
+
 
