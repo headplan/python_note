@@ -151,7 +151,7 @@ except JSONDecodeError as err:
     print('JSONDecodeError: {}'.format(err))
 ```
 
-异常很好用 , 但切记滥用异常处理 . 
+异常很好用 , 但切记滥用异常处理 .
 
 例如 , 想要查找字典中某个键对应的值时 , 就不能写成异常的形式
 
@@ -161,6 +161,13 @@ try:
     value = d['dob']
 except KeyError as err:
     print('KeyError: {}'.format(err))
+```
+
+对于flow-control\(流程控制\)的代码逻辑 , 一般不用异常处理 , 写成这样就好
+
+```py
+if 'dob' in d:
+    value = d['dob']
 ```
 
 
