@@ -176,6 +176,8 @@ if 'dob' in d:
 
 在try block中有多处抛出异常 , 需要使用多个try except block吗?
 
+**第一种 : **
+
 ```py
 try:
     db = DB.connect('<db path>') # 可能会抛出异常
@@ -183,6 +185,21 @@ try:
 except (DBConnectionError, DBQueryDataError) err:
     print('Error: {}'.format(err))
 ```
+
+**第二种 : **
+
+```py
+try:
+    db = DB.connect('<db path>') # 可能会抛出异常
+    try:
+        raw_data = DB.queryData('<viewer_id>')
+    except DBQueryDataError as err:
+        print('DB query data error: {}'.format(err))
+except DBConnectionError as err:
+    print('DB connection error: {}'.format(err))
+```
+
+第一种写法更加简洁 , 易于阅读 . 而且except后面的错误类型先抛出数据库连接错误 , 之后才抛出查询错误 , 实现的异常处理和第二种一样 . 
 
 
 
