@@ -55,6 +55,31 @@ if i: # i is an int
 * list/tuple/dict/set - iterable为空解析为false , 其余为true
 * object - none解析为false , 其余为true
 
+### 循环语句
+
+Python中的循环一般通过for循环和while循环实现 . 
+
+```py
+l = [1,2,3,4]
+for item in l:
+    print(item)
+1
+2
+3
+4
+```
+
+在Python中的数据结构只要是可迭代的\(iterable\) , 比如列表 , 集合等等 , 都可以通过下面的方式遍历 : 
+
+```py
+for item in <iterable>:
+    ...
+```
+
+这里需要强调一下字典 . 字典本身只有键是可迭代的 , 如果要遍历它的值或者是键值对 , 就需要通过其内置的函数values\(\)或者items\(\)实现 . 其中 , values\(\)返回字典的值的集合 , items\(\)返回键值对的集合 . 
+
+---
+
 #### if语句
 
 ```
