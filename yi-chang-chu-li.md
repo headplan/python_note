@@ -199,7 +199,29 @@ except DBConnectionError as err:
     print('DB connection error: {}'.format(err))
 ```
 
-第一种写法更加简洁 , 易于阅读 . 而且except后面的错误类型先抛出数据库连接错误 , 之后才抛出查询错误 , 实现的异常处理和第二种一样 . 
+第一种写法更加简洁 , 易于阅读 . 而且except后面的错误类型先抛出数据库连接错误 , 之后才抛出查询错误 , 实现的异常处理和第二种一样 .
+
+```py
+e = 1
+try:
+    1 / 0
+except ZeroDivisionError as e:
+    pass
+print(e) # NameError: name 'e' is not defined
+```
+
+这里为什么会报错 , 显示e没有被定义 ? 
+
+查看官方文档 : 
+
+> https://docs.python.org/3/reference/compound\_stmts.html\#the-try-statement
+
+```
+"When an exception has been assigned using as target, 
+it is cleared at the end of the except clause."
+```
+
+
 
 
 
