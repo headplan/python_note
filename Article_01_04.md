@@ -36,7 +36,7 @@ else:
     print('green')
 ```
 
-条件判断时 , 我们通常会省略判断的条件 , 但实际写代码时 , 还是建议显示的写明条件 , 除了boolean类型的 . 
+条件判断时 , 我们通常会省略判断的条件 , 但实际写代码时 , 还是建议显示的写明条件 , 除了boolean类型的 .
 
 ```py
 if s: # s is a string
@@ -46,6 +46,14 @@ if l: # l is a list
 if i: # i is an int
     ...
 ```
+
+#### 判断条件的省略用法
+
+* string - 空字符串解析为false , 其余为true
+* int - 0解析为false , 其余为true
+* bool - true为true , false为false
+* list/tuple/dict/set - iterable为空解析为false , 其余为true
+* object - none解析为false , 其余为true
 
 #### if语句
 
