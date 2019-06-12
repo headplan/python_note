@@ -170,5 +170,19 @@ if 'dob' in d:
     value = d['dob']
 ```
 
+---
+
+#### 其他记录
+
+在try block中有多处抛出异常 , 需要使用多个try except block吗?
+
+```py
+try:
+    db = DB.connect('<db path>') # 可能会抛出异常
+    raw_data = DB.queryData('<viewer_id>') # 可能会抛出异常
+except (DBConnectionError, DBQueryDataError) err:
+    print('Error: {}'.format(err))
+```
+
 
 
