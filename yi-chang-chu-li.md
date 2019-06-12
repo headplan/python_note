@@ -210,18 +210,32 @@ except ZeroDivisionError as e:
 print(e) # NameError: name 'e' is not defined
 ```
 
-这里为什么会报错 , 显示e没有被定义 ? 
+这里为什么会报错 , 显示e没有被定义 ?
 
-查看官方文档 : 
+查看官方文档 :
 
-> https://docs.python.org/3/reference/compound\_stmts.html\#the-try-statement
+> [https://docs.python.org/3/reference/compound\_stmts.html\#the-try-statement](https://docs.python.org/3/reference/compound_stmts.html#the-try-statement)
 
 ```
 "When an exception has been assigned using as target, 
 it is cleared at the end of the except clause."
 ```
 
+解释的很明显 , 当一个异常被指定为目标时 , 它将在except子句的末尾被清除 . 
 
+即 : 
 
+```py
+except E as N:
+    foo
 
+# 就等于
+except E as N:
+    try:
+        foo
+    finally:
+        del N
+```
+
+所以会报未定义的错误 . 
 
