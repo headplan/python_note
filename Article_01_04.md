@@ -1,6 +1,51 @@
-## 条件判断与循环
+# 条件判断与循环
 
+### 条件语句
 
+用法很简单 , 比如表示y=\|x\|这个函数 , 也就是x的绝对值
+
+```py
+# y = |x|
+if x < 0:
+    y = -x
+else:
+    y = x
+```
+
+Python不支持switch语句 , else if在Python中用`elif`语法表达
+
+```py
+if condition_1:
+    statement_1
+elif condition_2:
+    statement_2
+elif condition_i:
+    statement_i
+else:
+    statement_n
+```
+
+判断中我们常会使用判断条件
+
+```py
+if id == 0:
+    print('red')
+elif id = 1:
+    print('yellow')
+else:
+    print('green')
+```
+
+条件判断时 , 我们通常会省略判断的条件 , 但实际写代码时 , 还是建议显示的写明条件 , 除了boolean类型的 . 
+
+```py
+if s: # s is a string
+    ...
+if l: # l is a list
+    ...
+if i: # i is an int
+    ...
+```
 
 #### if语句
 
