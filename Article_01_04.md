@@ -57,7 +57,7 @@ if i: # i is an int
 
 ### 循环语句
 
-Python中的循环一般通过for循环和while循环实现 . 
+Python中的循环一般通过for循环和while循环实现 .
 
 ```py
 l = [1,2,3,4]
@@ -69,7 +69,7 @@ for item in l:
 4
 ```
 
-在Python中的数据结构只要是可迭代的\(iterable\) , 比如列表 , 集合等等 , 都可以通过下面的方式遍历 : 
+在Python中的数据结构只要是可迭代的\(iterable\) , 比如列表 , 集合等等 , 都可以通过下面的方式遍历 :
 
 ```py
 for item in <iterable>:
@@ -77,6 +77,33 @@ for item in <iterable>:
 ```
 
 这里需要强调一下字典 . 字典本身只有键是可迭代的 , 如果要遍历它的值或者是键值对 , 就需要通过其内置的函数values\(\)或者items\(\)实现 . 其中 , values\(\)返回字典的值的集合 , items\(\)返回键值对的集合 . 
+
+```
+d = {'name': 'jason', 'dob': '2000-01-01', 'gender': 'male'}
+for k in d: # 遍历字典的键
+    print(k)
+
+# 打印结果
+# name
+# dob
+# gender
+
+for v in d.values(): # 遍历字典的值
+    print(v)
+
+# 打印结果
+# jason
+# 2000-01-01
+# male
+
+for k, v in d.items(): # 遍历字典的键值对
+    print('key: {}, value: {}'.format(k, v))
+
+# 打印结果    
+# key: name, value:jason
+# key: dob, value: 2000-01-01
+# key: gender, value: male
+```
 
 ---
 
