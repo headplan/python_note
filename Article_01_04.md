@@ -105,7 +105,31 @@ for k, v in d.items(): # 遍历字典的键值对
 # key: gender, value: male
 ```
 
+还可以通过集合中的索引来遍历元素 , 可以根据索引来做一些条件判断 . 
 
+通过range\(\)函数 , 拿到索引再去遍历访问集合中的元素 : 
+
+```py
+l = [1,2,3,4,5,6,7]
+for index in range(0, len(l)):
+    if index < 5:
+        print(l[index])
+```
+
+当同事需要索引和元素时 , 还有一种更简洁的方式 , 就是通过Python内置的函数enumerate\(\) , 用它来遍历集合 , 不仅返回每个元素 , 并且还返回其对应的索引 , 这样一来 , 上面的例子就可以写成
+
+```py
+l = [1,2,3,4,5,6,7]
+for index, item in enumerate(l):
+    if index < 5:
+        print(item)
+        
+1
+2
+3
+4
+5
+```
 
 ---
 
