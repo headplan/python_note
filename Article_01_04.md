@@ -131,9 +131,20 @@ for index, item in enumerate(l):
 5
 ```
 
-在循环语句中 , 还会搭配continue和break一起使用 . 所谓continue , 就是让程序跳过当前这层循环 , 继续执行下面的循环 ; 而break则是指完全跳出所在的整个循环体 . 
+在循环语句中 , 还会搭配continue和break一起使用 . 所谓continue , 就是让程序跳过当前这层循环 , 继续执行下面的循环 ; 而break则是指完全跳出所在的整个循环体 . 例如 : 
 
-
+```py
+# name_price: 产品名称(str)到价格(int)的映射字典
+# name_color: 产品名字(str)到颜色(list of str)的映射字典
+for name, price in name_price.items():
+    if price < 1000:
+        if name in name_color:
+            for color in name_color[name]:
+                if color != 'red':
+                    print('name: {}', color: {}'.format(name, color))
+        else:
+            print('name: {}, color: {}'.format(name, 'None'))
+```
 
 ---
 
