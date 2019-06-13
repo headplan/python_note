@@ -131,6 +131,10 @@ for index, item in enumerate(l):
 5
 ```
 
+在循环语句中 , 还会搭配continue和break一起使用 . 所谓continue , 就是让程序跳过当前这层循环 , 继续执行下面的循环 ; 而break则是指完全跳出所在的整个循环体 . 
+
+
+
 ---
 
 #### if语句
