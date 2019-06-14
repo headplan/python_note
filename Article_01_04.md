@@ -163,14 +163,14 @@ for name, price in name_price.items():
         print('name: {}, color: {}'.format(name, color))
 ```
 
-对于while循环也一样 , 当condition满足时 , 一直重复循环内部的操作 , 直到condition不再满足 , 就跳出循环体 . 
+对于while循环也一样 , 当condition满足时 , 一直重复循环内部的操作 , 直到condition不再满足 , 就跳出循环体 .
 
 ```
 while condition:
     ...
 ```
 
-很多时候 , for循环和while循环可以互相转换 , 比如要遍历一个列表 , 用while循环同样可以完成 : 
+很多时候 , for循环和while循环可以互相转换 , 比如要遍历一个列表 , 用while循环同样可以完成 :
 
 ```py
 l = [1,2,3,4]
@@ -179,6 +179,8 @@ while index < len(l):
     print(l[index])
     index += 1
 ```
+
+for和while
 
 ---
 
