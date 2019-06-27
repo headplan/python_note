@@ -50,19 +50,19 @@ a(-1) # 现在就可以通过a调用abs函数了
 
 #### 函数基础
 
-函数就是为了实现某一功能的代码段 , 只要写好以后 , 就可以重复利用 . 例如 : 
+函数就是为了实现某一功能的代码段 , 只要写好以后 , 就可以重复利用 . 例如 :
 
-```
+```py
 def my_func(message):
     print('Got a message: {}'.format(message))
-    
+
 # 调用函数 my_func()
 my_func('Hello World')
 # 输出
 Got a message: Hello World
 ```
 
-其中 : 
+其中 :
 
 * def是函数的声明
 * my\_func是函数的名称
@@ -70,5 +70,13 @@ Got a message: Hello World
 * 而print那行则是函数的主体部分 , 可以执行相应的语句
 * 在函数最后 , 可以返回调用结果\(retrun或yield\) , 也可以不返回 . 
 
+代码展示的形式 : 
 
+```py
+def name(param1, param2, ..., paramN):
+    statements
+    return/yield value # optional
+```
+
+和其他需要编译的语言\(比如C语言\)不一样的是 , def是可执行语句 , 这意味着函数直到被调用前 , 都是不存在的 . 当程序调用函数时 , def语句才会创建一个新的函数对象 , 并赋予其名字 . 
 
