@@ -78,14 +78,14 @@ def name(param1, param2, ..., paramN):
     return/yield value # optional
 ```
 
-和其他需要编译的语言\(比如C语言\)不一样的是 , def是可执行语句 , 这意味着函数直到被调用前 , 都是不存在的 . 当程序调用函数时 , def语句才会创建一个新的函数对象 , 并赋予其名字 . 
+和其他需要编译的语言\(比如C语言\)不一样的是 , def是可执行语句 , 这意味着函数直到被调用前 , 都是不存在的 . 当程序调用函数时 , def语句才会创建一个新的函数对象 , 并赋予其名字 .
 
-几个例子 : 
+几个例子 :
 
 ```
 def my_sum(a, b):
     return a + b
-    
+
 result = my_sum(3, 5)
 print(result)
 
@@ -110,37 +110,44 @@ def find_largest_element(l):
         if item > largest_element:
             largest_element = item
     print('largest element is: {}'.format(largest_element))
-    
+
 find_largest_element([8, 1, -3, 2, 0])
 
 # 输出
 largest element is: 8
 ```
 
-注意 : 主程序调用函数时 , 必须保证这个函数此前已经定义过 , 不然就会报错 , 比如 : 
+注意 : 主程序调用函数时 , 必须保证这个函数此前已经定义过 , 不然就会报错 , 比如 :
 
 ```
 my_func('hello world')
 def my_func(message):
     print('Got a message: {}'.format(message))
-    
+
 # 输出
 NameError: name 'my_func' is not defined
 ```
 
-在函数内部调用其他函数 , 函数间哪个声明在前 , 哪个在后就无所谓了 , 因为def是可执行语句 , 函数在调用之前都不存在 , 只需要保证调用时 , 函数都定义了 : 
+在函数内部调用其他函数 , 函数间哪个声明在前 , 哪个在后就无所谓了 , 因为def是可执行语句 , 函数在调用之前都不存在 , 只需要保证调用时 , 函数都定义了 :
 
 ```py
 def my_func(message):
     my_sub_func(message) # 调用my_sub_func()在其声明之前不影响程序执行
-    
+
 def my_sub_func(message):
     print('Got a message: {}'.format(message))
-    
+
 my_func('hello world')
 
 # 输出
 Got a message: hello world
+```
+
+Python函数的参数可以设定为默认值 , 比如下面这样写 : 
+
+```py
+def func(param = 0):
+    ...
 ```
 
 
