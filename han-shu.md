@@ -143,12 +143,14 @@ my_func('hello world')
 Got a message: hello world
 ```
 
-Python函数的参数可以设定为默认值 , 比如下面这样写 : 
+Python函数的参数可以设定为默认值 , 比如下面这样写 :
 
 ```py
 def func(param = 0):
     ...
 ```
+
+在调用函数func\(\)时 , 参数param没有传入 , 则参数默认为0 ; 而如果传入了参数param , 其就会覆盖默认值 . 
 
 
 
