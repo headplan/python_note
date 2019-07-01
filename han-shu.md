@@ -152,5 +152,5 @@ def func(param = 0):
 
 在调用函数func\(\)时 , 参数param没有传入 , 则参数默认为0 ; 而如果传入了参数param , 其就会覆盖默认值 . 
 
-
+Python和其他语言相比 , Python是dynamically typed的 , 可以接受任何数据类型\(整型 , 浮点 , 字符串等等\) . 对函数参数来说 , 这一点同样适用 . 
 
