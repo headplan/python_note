@@ -40,6 +40,11 @@
   * b=a
     * 表示创建b变量,并指向’ABC’
 
+```
+# 关键字不能声明为变量名
+['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'exec', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'not', 'or', 'pass', 'print', 'raise', 'return', 'try', 'while', 'with', 'yield']  
+```
+
 ### 常量
 
 * 常量就是不能变的变量,例如,π
