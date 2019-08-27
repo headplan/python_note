@@ -91,5 +91,9 @@ Python可以应用于众多领域 , 如 : 数据分析、组件集成、网络�
 * 代码不能加密 , 因为PYTHON是解释性语言 , 它的源码都是以名文形式存放的 . 
 * 线程不能利用多CPU问题 , 这是Python被人诟病最多的一个缺点 , GIL即全局解释器锁\(Global Interpreter Lock\) , 是计算机程序设计语言解释器用于同步线程的工具 , 使得任何时刻仅有一个线程在执行 , Python的线程是操作系统的原生线程 . 在Linux上为Pthread , 在Windows上为Win thread , 完全由操作系统调度线程的执行 . 一个Python解释器进程内有一条主线程 , 以及多条用户程序的执行线程 . 即使在多核CPU平台上 , 由于GIL的存在 , 所以禁止多线程的并行执行 . 
 
+关于GIL可以看下面的文章 : 
 
+[https://hackernoon.com/has-the-python-gil-been-slain-9440d28fa93d](https://hackernoon.com/has-the-python-gil-been-slain-9440d28fa93d)
+
+中文版 : [https://mp.weixin.qq.com/s/8KvQemz0SWq2hw-2aBPv2Q](https://mp.weixin.qq.com/s/8KvQemz0SWq2hw-2aBPv2Q)
 
