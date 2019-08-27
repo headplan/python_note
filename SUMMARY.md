@@ -5,7 +5,8 @@
 * [知识图谱](zhi-shi-tu-pu.md)
 * [Jupyter Notebooks](jupyter-notebooks.md)
 * [基础](Chapter_01.md)
-  * [变量和数据类型](Article_01_01.md)
+  * [变量和常量](Article_01_01.md)
+  * [数据类型](shu-ju-lei-xing.md)
   * [字符串和编码](Article_01_02.md)
   * [使用list和tuple](Article_01_03.md)
   * [使用dict和set](Article_01_06.md)
@@ -13,7 +14,7 @@
   * [异常处理](yi-chang-chu-li.md)
   * [函数](han-shu.md)
   * [面向对象](mian-xiang-dui-xiang.md)
-  * [模块化](mo-kuai-hua.md)
+  * 数据类型
 * [函数](Chapter_02.md)
   * [调用函数](Article_02_01.md)
   * [定义函数](Article_02_02.md)
