@@ -5,7 +5,7 @@
 * [知识图谱](zhi-shi-tu-pu.md)
 * [Jupyter Notebooks](jupyter-notebooks.md)
 * [基础](Chapter_01.md)
-  * [数据类型和变量](Article_01_01.md)
+  * [变量和数据类型](Article_01_01.md)
   * [字符串和编码](Article_01_02.md)
   * [使用list和tuple](Article_01_03.md)
   * [使用dict和set](Article_01_06.md)
