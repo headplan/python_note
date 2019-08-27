@@ -52,3 +52,5 @@ Python可以应用于众多领域 , 如 : 数据分析、组件集成、网络�
 
 ![](/assets/pythonyuyan.png)
 
+![](/assets/yuyanleixing.png)
+
