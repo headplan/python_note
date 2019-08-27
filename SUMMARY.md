@@ -1,6 +1,7 @@
 # Summary
 
 * [关于](README.md)
+* [历史](li-shi.md)
 * [知识图谱](zhi-shi-tu-pu.md)
 * [Jupyter Notebooks](jupyter-notebooks.md)
 * [基础](Chapter_01.md)
@@ -38,7 +39,7 @@
 * [面向对象编程](mian-xiang-dui-xiang-bian-cheng.md)
 * [面向对象高级编程](mian-xiang-dui-xiang-gao-ji-bian-cheng.md)
 * [错误,调试和测试](cuo-8bef2c-diao-shi-he-ce-shi.md)
-* [IO编程](iobian-cheng.md)
+* 历史
 * [进程和线程](jin-cheng-he-xian-cheng.md)
 * [正则表达式](zheng-ze-biao-da-shi.md)
 * [常用内建模块](chang-yong-nei-jian-mo-kuai.md)
