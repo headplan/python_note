@@ -178,5 +178,10 @@ SyntaxError: invalid token
 512
 ```
 
+#### 不等运算符
+
+* Python 2.x中不等于有两种写法`!=`和`<>`
+* Python 3.x中去掉了`<>` , 只有`!=`一种写法
+
 
 
