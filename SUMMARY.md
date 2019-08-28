@@ -4,6 +4,7 @@
 * [历史](li-shi.md)
 * [知识图谱](zhi-shi-tu-pu.md)
 * [Jupyter Notebooks](jupyter-notebooks.md)
+* [Python2.x与Python3.x的区别](python2xyu-python3-x-de-qu-bie.md)
 * [基础](Chapter_01.md)
   * [变量和常量](Article_01_01.md)
   * [数据类型](shu-ju-lei-xing.md)
@@ -37,7 +38,6 @@
   * [装饰器](Chapter_04/zhuang-shi-qi.md)
   * [偏函数](Chapter_04/pian-han-shu.md)
 * [模块](mo-kuai.md)
-* [面向对象编程](mian-xiang-dui-xiang-bian-cheng.md)
 * [面向对象高级编程](mian-xiang-dui-xiang-gao-ji-bian-cheng.md)
 * [错误,调试和测试](cuo-8bef2c-diao-shi-he-ce-shi.md)
 * 历史
