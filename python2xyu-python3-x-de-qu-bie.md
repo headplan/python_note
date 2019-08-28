@@ -54,5 +54,13 @@ Python 2.x
 u'\u4f60\u597d'
 ```
 
+Python 3.x
+
+```py
+>>> str = '哈哈'
+>>> str
+'哈哈'
+```
+
 
 
