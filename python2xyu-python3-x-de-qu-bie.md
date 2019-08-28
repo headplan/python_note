@@ -113,5 +113,12 @@ Python中的除法有两个运算符`/`和`//`
 
 #### 异常
 
+在 Python 3 中处理异常也轻微的改变了 , 在 Python 3 中使用 as 作为关键词 . 捕获异常的语法由**`except exc, var`**改为**`except exc as var`  **
+
+使用语法**`except (exc1, exc2) as var`**可以同时捕获多种类别的异常 , Python 2.6已经支持这两种语法 . 
+
+* Python 2.x中 , 所有类型的对象都是可以被直接抛出的 . Python 3.x中 , 只有继承自BaseException的对象才可以被抛出 . 
+* Python 2.x中 , raise语句使用逗号将抛出对象类型和参数分开 . Python 3.x中 , 取消了这种奇葩的写法 , 直接调用构造函数抛出对象即可 . 
+
 
 
