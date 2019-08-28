@@ -120,5 +120,28 @@ Python中的除法有两个运算符`/`和`//`
 * Python 2.x中 , 所有类型的对象都是可以被直接抛出的 . Python 3.x中 , 只有继承自BaseException的对象才可以被抛出 . 
 * Python 2.x中 , raise语句使用逗号将抛出对象类型和参数分开 . Python 3.x中 , 取消了这种奇葩的写法 , 直接调用构造函数抛出对象即可 . 
 
-在2.x时代 , 异常在代码中除了表示程序错误 , 还经常做一些普通控制结构应该做的事情 , 在3.x中可以看出 , 设计者让异常变的更加专一 , 只有在错误发生的情况才能去用异常捕获语句来处理 . 
+在2.x时代 , 异常在代码中除了表示程序错误 , 还经常做一些普通控制结构应该做的事情 , 在3.x中可以看出 , 设计者让异常变的更加专一 , 只有在错误发生的情况才能去用异常捕获语句来处理 .
+
+#### xrange
+
+在 Python 2 中 xrange\(\) 创建迭代对象的用法是非常流行的 . 比如 : for 循环或者是列表/集合/字典推导式 . 有点像生成器的惰性求值 . 这个xrange-iterable是无穷的 , 意味着你可以无限遍历 , xrange\(\)函数比range\(\)更快 . 
+
+```
+import timeit
+
+n = 10000
+def test_range(n):
+    return for i in range(n):
+        pass
+
+def test_xrange(n):
+    for i in xrange(n):
+        pass 
+```
+
+在Python 3 中 , xrange\(\)的名字被直接改成了range\(\) . 所以就不存在专属的xrange\(\)了 . 
+
+更多可以查看StackOverflow上的问答 : 
+
+[https://stackoverflow.com/questions/15014310/why-is-there-no-xrange-function-in-python3](https://stackoverflow.com/questions/15014310/why-is-there-no-xrange-function-in-python3)
 
