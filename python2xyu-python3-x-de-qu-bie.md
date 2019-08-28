@@ -31,16 +31,27 @@ print("fish", "panda", sep=', ')
 
 ##### Unicode
 
-Python 2有ASCII str\(\)类型 , unicode\(\)是单独的 , 不是 byte 类型 . 
+Python 2有ASCII str\(\)类型 , unicode\(\)是单独的 , 不是 byte 类型 .
 
-在Python 3 , 最终有了Unicode\(utf-8\)字符串 , 以及一个字节类 : byte 和 bytearrays . 
+在Python 3 , 最终有了Unicode\(utf-8\)字符串 , 以及一个字节类 : byte 和 bytearrays .
 
-由于Python3.x源码文件默认使用utf-8编码 , 这就使得以下代码是合法的 : 
+由于Python3.x源码文件默认使用utf-8编码 , 这就使得以下代码是合法的 :
 
 ```py
 >>> 中国 = 'china' 
 >>>print(中国) 
 china
+```
+
+Python 2.x
+
+```py
+>>> str = '你好'
+>>> str
+'\xe4\xbd\xa0\xe5\xa5\xbd'
+>>> str = u'你好'
+>>> str
+u'\u4f60\u597d'
 ```
 
 
