@@ -4,6 +4,7 @@
 * [历史](li-shi.md)
 * [知识图谱](zhi-shi-tu-pu.md)
 * [Jupyter Notebooks](jupyter-notebooks.md)
+* [Python增强提案](pythonzeng-qiang-ti-an.md)
 * [Python2.x与Python3.x的区别](python2xyu-python3-x-de-qu-bie.md)
 * [基础](Chapter_01.md)
   * [变量和常量](Article_01_01.md)
@@ -53,9 +54,5 @@
 * [Web开发](webkai-fa.md)
 * [异步IO](yi-bu-io.md)
 * [PlanBlog](planblog.md)
-* [机器学习](ji-qi-xue-xi.md)
-  * [Python机器学习及分析工具](ji-qi-xue-xi/pythonji-qi-xue-xi-ji-fen-xi-gong-ju.md)
-  * [数据预处理](ji-qi-xue-xi/shu-ju-yu-chu-li.md)
-  * [机器学习分析算法](ji-qi-xue-xi/ji-qi-xue-xi-fen-xi-suan-fa.md)
-    * [分类问题](ji-qi-xue-xi/ji-qi-xue-xi-fen-xi-suan-fa/fen-lei-wen-ti.md)
+* Python增强提案
 
