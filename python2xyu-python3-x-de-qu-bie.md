@@ -139,7 +139,7 @@ def test_xrange(n):
         pass
 ```
 
-在Python 3 中 , xrange\(\)的名字被直接改成了range\(\) . 所以就不存在专属的xrange\(\)了 . 
+在Python 3 中 , xrange\(\)的名字被直接改成了range\(\) . 所以就不存在专属的xrange\(\)了 .
 
 ```py
 import timeit
@@ -150,4 +150,33 @@ timeit.timeit('[x for x in range(10000000) if x%4 == 0]', number=1)
 更多可以查看StackOverflow上的问答 :
 
 [https://stackoverflow.com/questions/15014310/why-is-there-no-xrange-function-in-python3](https://stackoverflow.com/questions/15014310/why-is-there-no-xrange-function-in-python3)
+
+#### 八进制字面量表示
+
+* 八进制数必须写成0o777 , 原来的形式0777不能用了 ; 二进制必须写成0b111 . 
+* 新增了一个bin\(\)函数用于将一个整数转换成二进制字串 . Python 2.6已经支持这两种语法 . 
+* 在Python 3.x中 , 表示八进制字面量的方式只有一种 , 就是0o1000 . 
+
+**Python 2.x**
+
+```py
+>>> 0o1000
+512
+>>> 01000
+512
+```
+
+**python 3.x**
+
+```py
+>>> 01000
+  File "<stdin>", line 1
+    01000
+        ^
+SyntaxError: invalid token
+>>> 0o1000
+512
+```
+
+
 
