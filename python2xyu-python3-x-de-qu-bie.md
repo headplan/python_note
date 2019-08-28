@@ -124,9 +124,9 @@ Python中的除法有两个运算符`/`和`//`
 
 #### xrange
 
-在 Python 2 中 xrange\(\) 创建迭代对象的用法是非常流行的 . 比如 : for 循环或者是列表/集合/字典推导式 . 有点像生成器的惰性求值 . 这个xrange-iterable是无穷的 , 意味着你可以无限遍历 , xrange\(\)函数比range\(\)更快 . 
+在 Python 2 中 xrange\(\) 创建迭代对象的用法是非常流行的 . 比如 : for 循环或者是列表/集合/字典推导式 . 有点像生成器的惰性求值 . 这个xrange-iterable是无穷的 , 意味着你可以无限遍历 , xrange\(\)函数比range\(\)更快 .
 
-```
+```py
 import timeit
 
 n = 10000
@@ -136,12 +136,18 @@ def test_range(n):
 
 def test_xrange(n):
     for i in xrange(n):
-        pass 
+        pass
 ```
 
 在Python 3 中 , xrange\(\)的名字被直接改成了range\(\) . 所以就不存在专属的xrange\(\)了 . 
 
-更多可以查看StackOverflow上的问答 : 
+```py
+import timeit
+
+timeit.timeit('[x for x in range(10000000) if x%4 == 0]', number=1)
+```
+
+更多可以查看StackOverflow上的问答 :
 
 [https://stackoverflow.com/questions/15014310/why-is-there-no-xrange-function-in-python3](https://stackoverflow.com/questions/15014310/why-is-there-no-xrange-function-in-python3)
 
