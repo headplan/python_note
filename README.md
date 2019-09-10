@@ -42,6 +42,13 @@ Python是跨平台的,有2.x和3.x两个版本,不兼容.
 
 `注:要和Java或.Net平台交互,最好的还是通过网络调用来交互,确保个程序之间的独立性.`
 
+#### Python环境变量
+
+* PYTHONPATH - 是Python搜索路径 , 默认import的模块都会从这里寻找
+* PYTHONSTARTUP - Python启动后 , 最先寻找的环境变量 , 然后执行此变量指定的文件中的代码
+* PYTHONCASEOK - 加入这里的环境变量 , 就会使Python导入模块的时候不区分大小写
+* PYTHONHOME - 另一种模块搜索路径 . 它通常内嵌于PYTHONPATH或PYTHONSTARTUP目录中 , 使得两个模块库更容易切换
+
 ### 相关资料
 
 * [http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
