@@ -189,5 +189,20 @@ Python 2.x 中反引号\`\`相当于repr函数的作用 , 将对象转化为供�
 
 Python 3.x 中去掉了\`\`这种写法 , 只允许使用repr函数 , 这样做的目的是为了使代码看上去更清晰么 . 但是用repr的机会很少 , 一般只在debug的时候才用 , 多数时候还是用str函数来用字符串描述对象 .
 
-多个模块被改名
+#### 多个模块被改名\(根据PEP8\)
+
+* \_winreg - winreg
+* ConfigParser - configparser
+* copy\_reg - copyreg
+* Queue - queue
+* SocketServer - socketserver
+* repr - reprlib
+
+StringIO模块现在被合并到新的io模组内 . new, md5, gopherlib等模块被删除 . Python 2.6已经支援新的io模组 . 
+
+httplib, BaseHTTPServer, CGIHTTPServer, SimpleHTTPServer, Cookie, cookielib被合并到http包内 . 
+
+取消了exec语句 , 只剩下exec\(\)函数 . Python 2.6已经支援exec\(\)函数 . 
+
+
 
