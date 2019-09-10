@@ -35,10 +35,27 @@ Options and arguments (and corresponding environment variables):
 test_bytes = b'\x41'
 print(str(type(test_bytes)))
 print(str(test_bytes))
+
+# 不指定-b选项,python正常打印转换后的字符串
+$python test_bytes.py
+<class 'bytes'>
+b'A'
+
+# 指定-b选项,python打印转换的字符串之前,产生警告信息,但是继续执行
+<class 'bytes'>
+test_bytes.py:3: BytesWarning: str() on a bytes instance
+  print(str(test_bytes))
+b'A'
+
+# 指定-bb选项,python产生错误信息,程序终止运行
+<class 'bytes'>
+Traceback (most recent call last):
+  File "test_bytes.py", line 3, in <module>
+    print(str(test_bytes))
+BytesWarning: str() on a bytes instance
 ```
 
 ```py
-
 -B:don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x
 import运行时不写入.pyc文件.设置PYTHONDONTWRITEBYTECODE=x也可以
 
