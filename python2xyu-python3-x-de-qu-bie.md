@@ -218,3 +218,14 @@ httplib, BaseHTTPServer, CGIHTTPServer, SimpleHTTPServer, Cookie, cookielib被�
 
 str对象和bytes对象可以使用`.encode()`\(**str -&gt; bytes**\)或`.decode()`\(**bytes -&gt; str**\)方法相互转化 . 
 
+```py
+>>> s = b.decode() 
+>>> s 
+'china' 
+>>> b1 = s.encode() 
+>>> b1 
+b'china' 
+```
+
+
+
