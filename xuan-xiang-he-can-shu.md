@@ -4,6 +4,18 @@
 python --help
 ```
 
+#### 命令行参数概览
+
+```py
+[option]…:多个可选选项
+[-c cmd | -m mod | file | - ] [arg]:各种方式指定要执行的Python程序以及可能的参数
+    [-c cmd]:执行Python语句后退出
+    [-m mod]:把库模块当作脚本运行(同时也终止了选项列表,即其他选项必须放在-m之前)
+    [file]:执行Python脚本
+    [-]:Python执行后,出现交互提示界面,从标准输入读取Python语句,并执行
+    [arg]:指定的一个或多个arg,会作为参数传递给Python脚本/库模块
+```
+
 ```py
 Options and arguments (and corresponding environment variables):
 选项,参数和相应的环境变量:
@@ -44,7 +56,7 @@ python -m xxx.py
 这是两种加载py文件的方式:
    1.叫做直接运行
    2.相当于import,叫做当做模块来启动
-   
+
 不同的加载py文件的方式,主要是影响sys.path这个属性.sys.path相当于Linux中的PATH.
 >>> import sys
 >>> sys.path
