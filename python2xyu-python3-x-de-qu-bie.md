@@ -208,7 +208,7 @@ httplib, BaseHTTPServer, CGIHTTPServer, SimpleHTTPServer, Cookie, cookielib被�
 
 1.Py3.X去除了long类型 , 现在只有一种整型——int , 但它的行为就像2.X版本的long
 
-2.新增了bytes类型 , 对应于2.X版本的八位串 , 定义一个bytes字面量的方法如下 : 
+2.新增了bytes类型 , 对应于2.X版本的八位串 , 定义一个bytes字面量的方法如下 :
 
 ```py
 >>> b = b'china' 
@@ -216,5 +216,5 @@ httplib, BaseHTTPServer, CGIHTTPServer, SimpleHTTPServer, Cookie, cookielib被�
 <type 'bytes'>
 ```
 
-
+str对象和bytes对象可以使用`.encode()`\(**str -&gt; bytes**\)或`.decode()`\(**bytes -&gt; str**\)方法相互转化 . 
 
