@@ -8,7 +8,6 @@ python --help
 
 ```py
 [option]…:多个可选选项
-[-c cmd | -m mod | file | - ] [arg]:各种方式指定要执行的Python程序以及可能的参数
     [-c cmd]:执行Python语句后退出
     [-m mod]:把库模块当作脚本运行(同时也终止了选项列表,即其他选项必须放在-m之前)
     [file]:执行Python脚本
@@ -19,9 +18,26 @@ python --help
 ```py
 Options and arguments (and corresponding environment variables):
 选项,参数和相应的环境变量:
+```
+
+#### `-b`选项
+
+```py
 -b:issue warnings about str(bytes_instance), str(bytearray_instance)
    and comparing bytes/bytearray with str. (-bb: issue errors)
-发出关于str(字节实例),str(字节组实例)的警告,并将字节/字节组与str进行比较.
+对str(bytes_instance),str(bytearray_instance)以及将bytes/bytearray与str比较时,
+产生警告信息.如果使用了-bb选项,则产生错误信息.
+```
+
+**脚本实例**
+
+```py
+test_bytes = b'\x41'
+print(str(type(test_bytes)))
+print(str(test_bytes))
+```
+
+```py
 
 -B:don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x
 import运行时不写入.pyc文件.设置PYTHONDONTWRITEBYTECODE=x也可以
