@@ -216,7 +216,7 @@ httplib, BaseHTTPServer, CGIHTTPServer, SimpleHTTPServer, Cookie, cookielib被�
 <type 'bytes'>
 ```
 
-str对象和bytes对象可以使用`.encode()`\(**str -&gt; bytes**\)或`.decode()`\(**bytes -&gt; str**\)方法相互转化 . 
+str对象和bytes对象可以使用`.encode()`\(**str -&gt; bytes**\)或`.decode()`\(**bytes -&gt; str**\)方法相互转化 .
 
 ```py
 >>> s = b.decode() 
@@ -224,8 +224,8 @@ str对象和bytes对象可以使用`.encode()`\(**str -&gt; bytes**\)或`.decode
 'china' 
 >>> b1 = s.encode() 
 >>> b1 
-b'china' 
+b'china'
 ```
 
-
+3.dict的.key\(\) , .items和.values\(\)方法返回迭代器 , 而之前的iterkeys\(\)等函数都被放弃 . 同时去掉的还有dict.has\_key\(\) , 用in代替了 . 
 
