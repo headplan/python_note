@@ -6,6 +6,7 @@
 * [Jupyter Notebooks](jupyter-notebooks.md)
 * [Python增强提案](pythonzeng-qiang-ti-an.md)
 * [Python2.x与Python3.x的区别](python2xyu-python3-x-de-qu-bie.md)
+* [选项和参数](xuan-xiang-he-can-shu.md)
 * [基础](Chapter_01.md)
   * [变量和常量](Article_01_01.md)
   * [数据类型](shu-ju-lei-xing.md)
@@ -40,7 +41,6 @@
   * [偏函数](Chapter_04/pian-han-shu.md)
 * [模块](mo-kuai.md)
 * [面向对象高级编程](mian-xiang-dui-xiang-gao-ji-bian-cheng.md)
-* [错误,调试和测试](cuo-8bef2c-diao-shi-he-ce-shi.md)
 * 历史
 * [进程和线程](jin-cheng-he-xian-cheng.md)
 * [正则表达式](zheng-ze-biao-da-shi.md)
@@ -54,5 +54,4 @@
 * [Web开发](webkai-fa.md)
 * [异步IO](yi-bu-io.md)
 * [PlanBlog](planblog.md)
-* Python增强提案
 
