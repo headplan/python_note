@@ -15,8 +15,11 @@ Options and arguments (and corresponding environment variables):
 import运行时不写入.pyc文件.设置PYTHONDONTWRITEBYTECODE=x也可以
 
 -c cmd:program passed in as string (terminates option list)
-程序以字符串方式传入,例如:
+程序以字符串方式传入执行,并将运行结果作为cmd字符串,例如:
 python -c "import sys;print('hello');print(sys.argv)" 123
+
+-d:debug output from parser; also PYTHONDEBUG=x
+在解析时显示调试信息,设置PYTHONDEBUG也可以
 ```
 
 
