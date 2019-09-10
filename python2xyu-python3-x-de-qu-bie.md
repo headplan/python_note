@@ -198,11 +198,23 @@ Python 3.x 中去掉了\`\`这种写法 , 只允许使用repr函数 , 这样做�
 * SocketServer - socketserver
 * repr - reprlib
 
-StringIO模块现在被合并到新的io模组内 . new, md5, gopherlib等模块被删除 . Python 2.6已经支援新的io模组 . 
+StringIO模块现在被合并到新的io模组内 . new, md5, gopherlib等模块被删除 . Python 2.6已经支援新的io模组 .
 
-httplib, BaseHTTPServer, CGIHTTPServer, SimpleHTTPServer, Cookie, cookielib被合并到http包内 . 
+httplib, BaseHTTPServer, CGIHTTPServer, SimpleHTTPServer, Cookie, cookielib被合并到http包内 .
 
-取消了exec语句 , 只剩下exec\(\)函数 . Python 2.6已经支援exec\(\)函数 . 
+取消了exec语句 , 只剩下exec\(\)函数 . Python 2.6已经支援exec\(\)函数 .
+
+#### 数据类型
+
+1.Py3.X去除了long类型 , 现在只有一种整型——int , 但它的行为就像2.X版本的long
+
+2.新增了bytes类型 , 对应于2.X版本的八位串 , 定义一个bytes字面量的方法如下 : 
+
+```py
+>>> b = b'china' 
+>>> type(b) 
+<type 'bytes'>
+```
 
 
 
