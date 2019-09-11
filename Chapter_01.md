@@ -16,7 +16,19 @@
 * 标识符的其他的部分由字母 , 数字和下划线组成 . 
 * 标识符对大小写敏感 . 
 
-在Python中 , 非ASCII标识符也是允许的 . 
+在Python中 , 非ASCII标识符也是允许的 .
+
+**保留字**
+
+```py
+>>> import keyword
+>>> keyword.kwlist
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 
+'await', 'break', 'class', 'continue', 'def', 'del', 
+'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 
+'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 
+'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+```
 
 **语法**
 
