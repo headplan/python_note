@@ -228,15 +228,62 @@ NameError: name 'exit' is not defined
 ```
 -v:verbose (trace import statements); also PYTHONVERBOSE=x
    can be supplied multiple times to increase verbosity
+冗余输出(用于跟踪import语句);可以多次使用增加跟踪冗余度.相当于PYTHONVERBOSE=x
 ```
 
--V/--version选项
+#### -V/--version选项
 
--W arg选项
+```
+-V:print the Python version number and exit (also --version)
+   when given twice, print more information about the build
+打印Python版本号,然后退出.使用-VV会打印出更多信息.
+```
 
--x选项
+#### -W arg选项
 
--X opt选项
+```
+-W arg:warning control; arg is action:message:category:module:lineno
+       also PYTHONWARNINGS=arg
+警告控制;参数是action:message:category:module:lineno
+```
 
-–check-hash-based-pycs always\|default\|never选项
+arg的选项很多 , 常用的有 : 
+
+* ignore : 忽略所有警告信息
+* default : 明确的设置为默认警告信息
+* all : 每次出现警告信息都打印\(注意 : 如果在循环中产生警告 , 可能会产生很多警告信息\)
+* module : 模块产生的警告信息 , 只在第一次发生时打印
+* once : 程序产生的警告信息 , 只在第一次发生时打印
+* error : 把警告信息当做错误 . 
+
+#### -x选项
+
+```
+-x:skip first line of source, allowing use of non-Unix forms of #!cmd
+略过Python源文件的第一行,允许使用费UNIX格式#!cmd.
+```
+
+#### -X opt选项
+
+```
+-X opt:set implementation-specific option
+设置特定实现上的选项
+```
+
+#### --check-hash-based-pycs always\|default\|never选项
+
+```
+--check-hash-based-pycs always|default|never:
+    control how Python invalidates hash-based .pyc files
+```
+
+只是Python如何使基于哈希的.pyc文件无效 . 有三种选择 : 
+
+* default : 对checked与unchecked的基于哈希的字节码缓存文件 , 按照默认的语义验证有效性 . 
+* always : 所有基于哈希的.pyc文件 , 无论是checked还是unchecked , 都与相应的源代码比较来验证有效性 . 
+* never : 所有基于哈希的.pyc文件 , 都不与相应的源代码比较来验证有效性 . 
+
+这个选项并不影响基于时间戳的.pyc文件的有效性验证方法 . 
+
+[https://docs.python.org/zh-cn/3/using/cmdline.html](https://docs.python.org/zh-cn/3/using/cmdline.html)
 
