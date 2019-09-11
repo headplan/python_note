@@ -247,7 +247,7 @@ NameError: name 'exit' is not defined
 警告控制;参数是action:message:category:module:lineno
 ```
 
-arg的选项很多 , 常用的有 : 
+arg的选项很多 , 常用的有 :
 
 * ignore : 忽略所有警告信息
 * default : 明确的设置为默认警告信息
@@ -277,13 +277,15 @@ arg的选项很多 , 常用的有 :
     control how Python invalidates hash-based .pyc files
 ```
 
-只是Python如何使基于哈希的.pyc文件无效 . 有三种选择 : 
+只是Python如何使基于哈希的.pyc文件无效 . 有三种选择 :
 
 * default : 对checked与unchecked的基于哈希的字节码缓存文件 , 按照默认的语义验证有效性 . 
 * always : 所有基于哈希的.pyc文件 , 无论是checked还是unchecked , 都与相应的源代码比较来验证有效性 . 
 * never : 所有基于哈希的.pyc文件 , 都不与相应的源代码比较来验证有效性 . 
 
 这个选项并不影响基于时间戳的.pyc文件的有效性验证方法 . 
+
+更多命令行选项与常量参考 : 
 
 [https://docs.python.org/zh-cn/3/using/cmdline.html](https://docs.python.org/zh-cn/3/using/cmdline.html)
 
