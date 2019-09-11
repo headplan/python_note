@@ -151,7 +151,7 @@ python -m xxx.py
 会打印出很多路径.就是当前Python解析器运行的环境,Python解析器会在这些目录下去寻找依赖库.
 ```
 
-还可以使用`python -m venv`创建虚拟环境 . 
+还可以使用`python -m venv`创建虚拟环境 .
 
 #### -O与-OO选项
 
@@ -171,6 +171,47 @@ $ python -O .
 $ python -OO .
 # 生成.pyc文件扩展名前,添加了.opt-1和.opt-2
 # __main__.cpython-37.opt-1.pyc  __main__.cpython-37.opt-2.pyc
+```
+
+#### -q选项
+
+```
+-q:don't print version and copyright messages on interactive startup
+在交互启动时,不打印版本与版权信息
+```
+
+#### -s选项
+
+```
+-s:don't add user site directory to sys.path; also PYTHONNOUSERSITE
+不向sys.path中添加用于站点的目录;相当于PYTHONNOUSERSITE
+```
+
+#### -S选项
+
+```
+-S:don't imply 'import site' on initialization
+初始化时不执行'import site'
+```
+
+**脚本实例**
+
+```py
+➜  ~ python -S
+Python 3.7.3 (default, Mar 27 2019, 09:23:39)
+[Clang 10.0.0 (clang-1000.11.45.5)] on darwin
+>>> help(exit) # 不能用了
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'help' is not defined
+>>> exit() # 也无法退出了
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'exit' is not defined
+>>> import sys
+>>> sys.path
+['', '/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python37.zip', '/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7', '/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload']
+>>> # 这里的目录少了几个,没有了/usr/local/lib/python3.7/site-packages
 ```
 
 
