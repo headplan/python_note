@@ -153,3 +153,25 @@ python -m xxx.py
 
 还可以使用`python -m venv`创建虚拟环境 . 
 
+#### -O与-OO选项
+
+```
+-O:remove assert and __debug__-dependent statements; add .opt-1 before
+   .pyc extension; also PYTHONOPTIMIZE=x
+删掉assert与__debug__依赖的语句;在保存的.pyc文件扩展名之前,添加.opt-1字样;
+相当于PYTHONOPTIMIZE=x
+-OO:do -O changes and also discard docstrings; add .opt-2 before .pyc extension
+执行-O的动作,额外还会丢掉docstrings;在.pyc文件扩展名之前,添加.opt-2字样;
+```
+
+**脚本实例**
+
+```
+$ python -O .
+$ python -OO .
+# 生成.pyc文件扩展名前,添加了.opt-1和.opt-2
+# __main__.cpython-37.opt-1.pyc  __main__.cpython-37.opt-2.pyc
+```
+
+
+
