@@ -10,6 +10,12 @@
 * [基础](Chapter_01.md)
   * [数据类型](shu-ju-lei-xing.md)
     * [变量和常量](shu-ju-lei-xing/bian-liang-he-chang-liang.md)
+    * Number数字
+    * String字符串
+    * List列表
+    * Tuple元组
+    * Set集合
+    * Dictionary字段
   * [字符串和编码](Article_01_02.md)
   * [使用list和tuple](Article_01_03.md)
   * [使用dict和set](Article_01_06.md)
