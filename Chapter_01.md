@@ -43,6 +43,11 @@
 * 空行 : 空行仅仅方便维护 . 和缩进不同 , 不是Python语法 , 不写的话解释器运行也不会出错
 * 同一行显示多条语句 , 语句之间使用分号分割
 * print默认输出是换行的 , 末尾加上end不换号`print(x,end="")`
+* import和from...import导入相应的模块 : 
+  * 将整个模块导入 : `import somemodule`
+  * 从某个模块中导入某个函数 : `from somemodule import somfunc`
+  * 从某个模块中导入多个函数 : `from somemodule firstfunc, secondfunc`
+  * 将某个模块中的全部函数导入 : `from somemodule import *`
 
 **运行程序**
 
