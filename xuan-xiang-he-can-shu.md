@@ -120,13 +120,23 @@ Hello,World!
 >>>
 ```
 
+#### -I选项
+
 ```py
 -I:isolate Python from the user's environment(implies -E and -s)
 从用户配置环境中隔离Python(意味着-E和-s)
+```
 
+#### -m mod选项
+
+```py
 -m mod:run library module as a script (terminates option list)
 将库中的python模块用作脚本去运行.
-常用例子:
+```
+
+**脚本实例**
+
+```py
 python -m http.server #python3中启动一个简单的http服务器
 将模块当做脚本去启动有什么用?
 python xxx.py
@@ -141,5 +151,5 @@ python -m xxx.py
 会打印出很多路径.就是当前Python解析器运行的环境,Python解析器会在这些目录下去寻找依赖库.
 ```
 
-
+还可以使用`python -m venv`创建虚拟环境 . 
 
