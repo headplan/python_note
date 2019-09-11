@@ -214,5 +214,60 @@ NameError: name 'exit' is not defined
 >>> # 这里的目录少了几个,没有了/usr/local/lib/python3.7/site-packages
 ```
 
+#### -u选项
+
+```
+-u:force the stdout and stderr streams to be unbuffered;
+   this option has no effect on stdin; also PYTHONUNBUFFERED=x
+强制标准输出stdout与标准输入stderr流是无缓冲的;但是对标准输入stdin无效;
+相当于设置PYTHONUNBUFFERED=x
+```
+
+
+
+
+
+
+
+-v选项
+
+
+
+
+
+
+
+-V/--version选项
+
+
+
+-W arg选项
+
+
+
+
+
+
+
+
+
+-x选项
+
+
+
+
+
+
+
+-X opt选项
+
+
+
+
+
+
+
+–check-hash-based-pycs always\|default\|never选项
+
 
 
