@@ -62,7 +62,7 @@ import导入Python脚本时不保存.pyc文件.设置PYTHONDONTWRITEBYTECODE=x�
 
 **脚本实例**
 
-在未指定-B选项时 , 执行\_\_main\_\_.py脚本 , 会在当前目录下创建\_\_pycache\_\_子目录 , 在该目录下保存生成的.pyc文件 . 
+在未指定-B选项时 , 执行\_\_main\_\_.py脚本 , 会在当前目录下创建\_\_pycache\_\_子目录 , 在该目录下保存生成的.pyc文件 .
 
 ```
 $ cat __main__.py
@@ -73,7 +73,7 @@ Hello,World!
 # 生成文件__main__.cpython-37.pyc
 ```
 
-如果在执行python脚本时候 , 指定选项-B , 就不会生成.pyc文件 . 
+如果在执行python脚本时候 , 指定选项-B , 就不会生成.pyc文件 .
 
 #### -c cmd选项
 
@@ -88,17 +88,39 @@ python -c "import sys;print('hello');print(sys.argv)" 123
 ```py
 -d:debug output from parser; also PYTHONDEBUG=x
 打印parser解析器时显示调试信息,设置PYTHONDEBUG也可以
+```
 
+#### -E选项
+
+```py
 -E:ignore PYTHON* environment variables (such as PYTHONPATH)
 忽略PYTHON*的环境变量,例如PYTHONPATH
+```
 
+#### -h/--help选项
+
+```py
 -h:print this help message and exit (also --help)
 打印帮助消息并退出(--help也可以)
+```
 
+#### -i选项
+
+```py
 -i:inspect interactively after running script; forces a prompt even
    if stdin does not appear to be a terminal; also PYTHONINSPECT=x
-运行脚本后继续进入交互界面,即使stdin不是终端,也强制提示.设置PYTHONINSPECT也可以.
+在运行脚本后继续进入交互界面,即使是stdin标准输入,不是终端也强制显示提示符.设置PYTHONINSPECT也可以.
+```
 
+**脚本实例**
+
+```
+$ python -i hello.py
+Hello,World!
+>>>
+```
+
+```py
 -I:isolate Python from the user's environment(implies -E and -s)
 从用户配置环境中隔离Python(意味着-E和-s)
 
