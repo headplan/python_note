@@ -223,51 +223,20 @@ NameError: name 'exit' is not defined
 相当于设置PYTHONUNBUFFERED=x
 ```
 
+#### -v选项
 
-
-
-
-
-
--v选项
-
-
-
-
-
-
+```
+-v:verbose (trace import statements); also PYTHONVERBOSE=x
+   can be supplied multiple times to increase verbosity
+```
 
 -V/--version选项
 
-
-
 -W arg选项
-
-
-
-
-
-
-
-
 
 -x选项
 
-
-
-
-
-
-
 -X opt选项
 
-
-
-
-
-
-
 –check-hash-based-pycs always\|default\|never选项
-
-
 
