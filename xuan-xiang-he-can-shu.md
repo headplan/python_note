@@ -60,15 +60,34 @@ BytesWarning: str() on a bytes instance
 import导入Python脚本时不保存.pyc文件.设置PYTHONDONTWRITEBYTECODE=x也可以
 ```
 
+**脚本实例**
 
+在未指定-B选项时 , 执行\_\_main\_\_.py脚本 , 会在当前目录下创建\_\_pycache\_\_子目录 , 在该目录下保存生成的.pyc文件 . 
+
+```
+$ cat __main__.py
+print("Hello,World!")
+$ python .
+Hello,World!
+# 此时会生成__pycache__子目录
+# 生成文件__main__.cpython-37.pyc
+```
+
+如果在执行python脚本时候 , 指定选项-B , 就不会生成.pyc文件 . 
+
+#### -c cmd选项
 
 ```py
 -c cmd:program passed in as string (terminates option list)
 程序以字符串方式传入执行,并将运行结果作为cmd字符串,例如:
 python -c "import sys;print('hello');print(sys.argv)" 123
+```
 
+#### -d选项
+
+```py
 -d:debug output from parser; also PYTHONDEBUG=x
-在解析时显示调试信息,设置PYTHONDEBUG也可以
+打印parser解析器时显示调试信息,设置PYTHONDEBUG也可以
 
 -E:ignore PYTHON* environment variables (such as PYTHONPATH)
 忽略PYTHON*的环境变量,例如PYTHONPATH
