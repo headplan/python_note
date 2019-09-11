@@ -9,6 +9,7 @@
 * [选项和参数](xuan-xiang-he-can-shu.md)
 * [基础](Chapter_01.md)
   * [数据类型](shu-ju-lei-xing.md)
+    * [变量和常量](shu-ju-lei-xing/bian-liang-he-chang-liang.md)
   * [变量和常量](Article_01_01.md)
   * [字符串和编码](Article_01_02.md)
   * [使用list和tuple](Article_01_03.md)
