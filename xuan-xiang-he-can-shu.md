@@ -57,8 +57,12 @@ BytesWarning: str() on a bytes instance
 
 ```py
 -B:don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x
-import运行时不写入.pyc文件.设置PYTHONDONTWRITEBYTECODE=x也可以
+import导入Python脚本时不保存.pyc文件.设置PYTHONDONTWRITEBYTECODE=x也可以
+```
 
+
+
+```py
 -c cmd:program passed in as string (terminates option list)
 程序以字符串方式传入执行,并将运行结果作为cmd字符串,例如:
 python -c "import sys;print('hello');print(sys.argv)" 123
