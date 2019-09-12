@@ -1,10 +1,10 @@
 # Number数字
 
-Python3支持int , float , bool , complex\(复数\)
+Python3支持**int , float , bool , complex**\(复数\)
 
 在Python3里 , 只有一种整数类型int , 表示为长整型 , 没有python2中的Long .
 
-内置的**`type()`**函数可以用来查询变量所指的对象类型 :
+内置的`type()`函数可以用来查询变量所指的对象类型 :
 
 ```py
 >>> a, b, c, d = 20, 5.5, True, 4+3j
@@ -12,11 +12,33 @@ Python3支持int , float , bool , complex\(复数\)
 <class 'int'> <class 'float'> <class 'bool'> <class 'complex'>
 ```
 
-还可以用**`isinstance()`**来判断 : 
+还可以用`isinstance()`来判断 :
 
 ```py
 >>> isinstance(d, complex)
 True
+```
+
+isinstance和type的区别在于 : 
+
+* `type()`不会认为子类是一种父类类型 . 
+* `isinstance()`会认为子类是一种父类类型 . 
+
+```py
+>>> class A:
+...     pass
+...
+>>> class B(A):
+...     pass
+...
+>>> isinstance(A(), A)
+True
+>>> type(A()) == A
+True
+>>> isinstance(B(), A)
+True
+>>> type(B()) == A
+False
 ```
 
 
