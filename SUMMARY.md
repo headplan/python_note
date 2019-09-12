@@ -11,6 +11,7 @@
   * [数据类型](shu-ju-lei-xing.md)
     * [变量和常量](shu-ju-lei-xing/bian-liang-he-chang-liang.md)
     * [Number数字](shu-ju-lei-xing/numbershu-zi.md)
+      * [相关函数](shu-ju-lei-xing/numbershu-zi/xiang-guan-han-shu.md)
     * String字符串
     * List列表
     * Tuple元组
