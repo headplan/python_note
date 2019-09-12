@@ -19,7 +19,7 @@ Python3支持**int , float , bool , complex**\(复数\)
 True
 ```
 
-isinstance和type的区别在于 : 
+isinstance和type的区别在于 :
 
 * `type()`不会认为子类是一种父类类型 . 
 * `isinstance()`会认为子类是一种父类类型 . 
@@ -39,6 +39,25 @@ True
 True
 >>> type(B()) == A
 False
+```
+
+> 注意 : 在Python2中是没有布尔型的 , 它用数字0表示False , 用1表示True . 到Python3中 , 把True和False定义成关键字了 , 但它们的值是1和0 , 可以和数字相加 .
+
+当指定一个值时 , 对象就会被创建 : 
+
+```
+var1 = 1
+var2 = 10
+```
+
+可以使用del语句删除对象引用 :
+
+```
+del var1[,var2[,var3[....,varN]]]
+```
+
+```
+del var1, var2
 ```
 
 
