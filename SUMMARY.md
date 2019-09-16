@@ -14,6 +14,7 @@
       * [相关函数](shu-ju-lei-xing/numbershu-zi/xiang-guan-han-shu.md)
     * [String字符串](shu-ju-lei-xing/stringzi-fu-chuan.md)
       * [Format格式化函数](shu-ju-lei-xing/stringzi-fu-chuan/formatge-shi-hua-han-shu.md)
+      * [相关函数](shu-ju-lei-xing/stringzi-fu-chuan/xiang-guan-han-shu.md)
     * List列表
     * Tuple元组
     * Set集合
