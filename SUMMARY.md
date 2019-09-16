@@ -12,7 +12,7 @@
     * [变量和常量](shu-ju-lei-xing/bian-liang-he-chang-liang.md)
     * [Number数字](shu-ju-lei-xing/numbershu-zi.md)
       * [相关函数](shu-ju-lei-xing/numbershu-zi/xiang-guan-han-shu.md)
-    * String字符串
+    * [String字符串](shu-ju-lei-xing/stringzi-fu-chuan.md)
     * List列表
     * Tuple元组
     * Set集合
