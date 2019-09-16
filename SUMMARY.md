@@ -17,8 +17,8 @@
       * [相关函数](shu-ju-lei-xing/stringzi-fu-chuan/xiang-guan-han-shu.md)
     * [List列表](shu-ju-lei-xing/listlie-biao.md)
       * [相关函数](shu-ju-lei-xing/listlie-biao/xiang-guan-han-shu.md)
-    * Tuple元组
-    * Set集合
+    * [Tuple元组](shu-ju-lei-xing/tupleyuan-zu.md)
+    * [Set集合](shu-ju-lei-xing/setji-he.md)
     * [Dictionary字典](shu-ju-lei-xing/dictionaryzi-duan.md)
   * [使用list和tuple](Article_01_03.md)
   * [字符串和编码](Article_01_02.md)
