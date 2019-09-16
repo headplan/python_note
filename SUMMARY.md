@@ -18,9 +18,9 @@
     * [List列表](shu-ju-lei-xing/listlie-biao.md)
     * Tuple元组
     * Set集合
-    * Dictionary字段
-  * [字符串和编码](Article_01_02.md)
+    * [Dictionary字典](shu-ju-lei-xing/dictionaryzi-duan.md)
   * [使用list和tuple](Article_01_03.md)
+  * [字符串和编码](Article_01_02.md)
   * [使用dict和set](Article_01_06.md)
   * [条件判断与循环](Article_01_04.md)
   * [异常处理](yi-chang-chu-li.md)
