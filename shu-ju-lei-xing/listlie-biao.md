@@ -30,11 +30,23 @@ list3 = ["a", "b", "c", "d"]
 list1 = ['Google', 'Baidu', 1997, 2000];
 list2 = [1, 2, 3, 4, 5, 6, 7 ];
 
-print ("list1[0]: ", list1[0])
-print ("list2[1:5]: ", list2[1:5])
+print("list1[0]: ", list1[0])
+print("list2[1:5]: ", list2[1:5])
 ```
 
 > 这里一样遵循**左闭右开**原则 .
+
+#### 更新列表
+
+可以对列表的数据项进行修改或更新 , 也可以使用append\(\)方法来添加列表项 : 
+
+```py
+list = ['Google', 'Baidu', 1997, 2000]
+ 
+print("第三个元素为 : ", list[2])
+list[2] = 2001
+print("更新后的第三个元素为 : ", list[2])
+```
 
 
 
