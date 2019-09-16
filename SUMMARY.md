@@ -16,6 +16,7 @@
       * [Format格式化函数](shu-ju-lei-xing/stringzi-fu-chuan/formatge-shi-hua-han-shu.md)
       * [相关函数](shu-ju-lei-xing/stringzi-fu-chuan/xiang-guan-han-shu.md)
     * [List列表](shu-ju-lei-xing/listlie-biao.md)
+      * [相关函数](shu-ju-lei-xing/listlie-biao/xiang-guan-han-shu.md)
     * Tuple元组
     * Set集合
     * [Dictionary字典](shu-ju-lei-xing/dictionaryzi-duan.md)
