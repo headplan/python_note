@@ -74,7 +74,7 @@ print ("删除第三个元素 : ", list)
 
 #### 列表截取与拼接
 
-和字符串截取一样 , 已知列表 : 
+和字符串截取一样 , 已知列表 :
 
 ```py
 L=['Google', 'Baidu', 'Taobao']
@@ -86,5 +86,5 @@ L=['Google', 'Baidu', 'Taobao']
 | L\[-2\] | 'Baidu' | 从右侧开始读取倒数第二个元素: count from the right |
 | L\[1:\] | \['Baidu', 'Taobao'\] | 输出从第二个元素开始后的所有元素 |
 
-
+列表的拼接也是使用`+`号拼接的 . 
 
